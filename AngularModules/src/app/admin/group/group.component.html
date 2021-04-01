@@ -1,0 +1,14 @@
+<table class="table table-striped">
+  <thead>
+  <td>#</td>
+  <td>ID</td>
+  <td>Body</td>
+  </thead>
+  <tbody>
+  <tr *ngFor="let group of groups; let i = index">
+    <td>{{ i+1 }}</td>
+    <td>{{ group.id }}</td>
+    <td>{{ group.body }}</td>
+  </tr>
+  </tbody>
+</table>
